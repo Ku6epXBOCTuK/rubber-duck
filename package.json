@@ -1,0 +1,31 @@
+{
+  "name": "rubber-duck",
+  "version": "0.0.1",
+  "description": "Best debug tool - rubber duck",
+  "keywords": [
+    "rubber",
+    "duck",
+    "debug",
+    "tool",
+    "fun"
+  ],
+  "homepage": "https://github.com/Ku6epXBOCTuK/rubber-duck#readme",
+  "bugs": {
+    "url": "https://github.com/Ku6epXBOCTuK/rubber-duck/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ku6epXBOCTuK/rubber-duck.git"
+  },
+  "license": "MIT",
+  "author": "Ku6epXBOCTuK",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "vite": "^8.0.11"
+  }
+}

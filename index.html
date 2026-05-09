@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rubber Duck - Voice Activity Detector</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦆</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="duck-wrapper">
+      <div id="duck-indicator" class="silent">
+        <svg viewBox="0 0 100 100" class="duck-icon">
+          <path d="M35 60 Q20 55 15 45 Q10 35 20 30 Q25 28 30 30 Q28 20 35 15 Q42 10 50 15 Q55 12 60 18 Q65 15 68 22 Q75 25 78 32 Q85 35 82 45 Q80 50 75 52 Q80 58 75 65 Q70 72 60 70 Q55 75 45 75 Q40 72 35 70 Z" fill="#FFD700" stroke="#DAA520" stroke-width="2"/>
+          <circle cx="45" cy="38" r="5" fill="#333"/>
+          <path d="M38 28 Q42 25 46 28" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="68" cy="45" rx="10" ry="6" fill="#FF8C00" opacity="0.6"/>
+        </svg>
+        <div id="glow-ring"></div>
+      </div>
+    </div>
+    <p id="status-text">Click "Start" to begin</p>
+    <button id="toggle-btn" class="btn">Start</button>
+    <p id="error-text" class="error hidden"></p>
+    <p class="hint">Grant microphone access to start voice detection</p>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
