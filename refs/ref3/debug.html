@@ -1,0 +1,367 @@
+<html lang="en" class="dark" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rubber Duck Debugging as a service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="./duck.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="relative min-h-screen overflow-hidden bg-background text-foreground">
+        <div aria-hidden="true" class="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+          <span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 1.25%;
+              left: -8%;
+              font-size: 10px;
+              animation-delay: 0s;
+              animation-duration: 20s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >const duck = new RubberDuck();</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 9.58333%;
+              left: -10%;
+              font-size: 11.5px;
+              animation-delay: 2.7s;
+              animation-duration: 21.9s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >duck.listen(problem);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 17.9167%;
+              left: -12%;
+              font-size: 13px;
+              animation-delay: 5.4s;
+              animation-duration: 23.8s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >trace.stack().filter(signal);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 26.25%;
+              left: -14%;
+              font-size: 10px;
+              animation-delay: 8.1s;
+              animation-duration: 25.7s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >if (confused) explain(out_loud);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 34.5833%;
+              left: -16%;
+              font-size: 11.5px;
+              animation-delay: 10.8s;
+              animation-duration: 27.6s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >return plan.nextStep();</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 42.9167%;
+              left: -8%;
+              font-size: 13px;
+              animation-delay: 13.5s;
+              animation-duration: 29.5s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >debugger;</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 51.25%;
+              left: -10%;
+              font-size: 10px;
+              animation-delay: 16.2s;
+              animation-duration: 31.4s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >console.log('aha moment...');</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 59.5833%;
+              left: -12%;
+              font-size: 11.5px;
+              animation-delay: 18.9s;
+              animation-duration: 33.3s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >assert.equal(got, expected);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 67.9167%;
+              left: -14%;
+              font-size: 13px;
+              animation-delay: 21.6s;
+              animation-duration: 21.2s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >catch (e) { log(e.stack); }</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 76.25%;
+              left: -16%;
+              font-size: 10px;
+              animation-delay: 0.3s;
+              animation-duration: 23.1s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >process.env.DEBUG = '*'</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 84.5833%;
+              left: -8%;
+              font-size: 11.5px;
+              animation-delay: 3s;
+              animation-duration: 25s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >heap.snapshot().analyze();</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 92.9167%;
+              left: -10%;
+              font-size: 13px;
+              animation-delay: 5.7s;
+              animation-duration: 26.9s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >git diff HEAD~1 --stat</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 1.25%;
+              left: -12%;
+              font-size: 10px;
+              animation-delay: 8.4s;
+              animation-duration: 28.8s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >npm run debug:verbose</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 9.58333%;
+              left: -14%;
+              font-size: 11.5px;
+              animation-delay: 11.1s;
+              animation-duration: 30.7s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >grep -r 'undefined' ./src</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 17.9167%;
+              left: -16%;
+              font-size: 13px;
+              animation-delay: 13.8s;
+              animation-duration: 32.6s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >curl -v http://localhost:3000</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 26.25%;
+              left: -8%;
+              font-size: 10px;
+              animation-delay: 16.5s;
+              animation-duration: 20.5s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >SELECT * FROM logs LIMIT 50;</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 34.5833%;
+              left: -10%;
+              font-size: 11.5px;
+              animation-delay: 19.2s;
+              animation-duration: 22.4s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >docker logs --tail 200 app</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 42.9167%;
+              left: -12%;
+              font-size: 13px;
+              animation-delay: 21.9s;
+              animation-duration: 24.3s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >strace -e trace=network -p $PID</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 51.25%;
+              left: -14%;
+              font-size: 10px;
+              animation-delay: 0.6s;
+              animation-duration: 26.2s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >tcpdump -i any port 8080</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 59.5833%;
+              left: -16%;
+              font-size: 11.5px;
+              animation-delay: 3.3s;
+              animation-duration: 28.1s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >breakpoint.set(line, 42);</span
+          >
+        </div>
+        <div class="relative z-20 p-4">
+          <a
+            href="/"
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 py-2 min-h-10 gap-2 bg-muted/80 text-foreground hover:bg-muted backdrop-blur-sm font-mono text-sm"
+            type="button"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"
+              ></path></svg
+            >duck://home
+          </a>
+        </div>
+        <div
+          class="relative z-10 flex min-h-[calc(100vh-64px)] flex-col items-center justify-center gap-8 px-4 py-8 lg:flex-row lg:gap-12 lg:px-12"
+        >
+          <div class="flex flex-col items-center gap-4 lg:w-[40%]">
+            <div class="relative">
+              <div class="absolute inset-0 rounded-full blur-3xl opacity-40 bg-primary scale-125"></div>
+              <div class="relative rounded-3xl border border-border bg-card/60 backdrop-blur-md p-6 shadow-2xl">
+                <img
+                  src="./img/ai_1.png"
+                  alt="Rubber debug duck"
+                  class="h-64 w-64 rounded-2xl object-cover md:h-80 md:w-80"
+                />
+                <div
+                  class="mt-4 flex items-center justify-center gap-2 rounded-xl border border-border bg-panel/80 px-4 py-2"
+                >
+                  <span class="relative flex h-2.5 w-2.5"
+                    ><span
+                      class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"
+                    ></span
+                    ><span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-primary"></span></span
+                  ><span class="font-mono text-xs text-primary">booting session...</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-center space-y-1">
+              <h1 class="font-mono text-2xl font-medium text-foreground">
+                <span class="text-primary">&gt;</span> RubberDuck.debug()
+              </h1>
+              <p class="text-sm text-muted-foreground font-light">Explain the bug. Follow the path. Ship the fix.</p>
+            </div>
+          </div>
+          <div class="w-full lg:w-[55%] max-w-2xl">
+            <div class="rounded-2xl border border-border bg-card/70 backdrop-blur-md shadow-2xl overflow-hidden">
+              <div class="flex items-center gap-2 border-b border-border bg-muted/80 px-4 py-3">
+                <div class="flex gap-1.5">
+                  <span class="h-3 w-3 rounded-full bg-destructive/70"></span
+                  ><span class="h-3 w-3 rounded-full bg-warning/70"></span
+                  ><span class="h-3 w-3 rounded-full bg-success/70"></span>
+                </div>
+                <div class="flex items-center gap-2 ml-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                    class="text-muted-foreground"
+                  >
+                    <path
+                      d="M117.31,134l-72,64a8,8,0,1,1-10.63-12L100,128,34.69,70A8,8,0,1,1,45.32,58l72,64a8,8,0,0,1,0,12ZM216,184H120a8,8,0,0,0,0,16h96a8,8,0,0,0,0-16Z"
+                    ></path></svg
+                  ><span class="font-mono text-xs text-muted-foreground">duck-session — bash</span>
+                </div>
+              </div>
+              <div
+                class="h-64 overflow-y-auto p-4 font-mono text-sm space-y-1 scrollbar-thin"
+                style="scrollbar-width: none"
+              >
+                <p class="text-muted-foreground"><span class="text-primary">duck@debug:~$</span> ./start-session.sh</p>
+                <p class="text-foreground">$ describe issue --env production</p>
+                <p class="text-tertiary pl-2">&gt; analysing stack trace...</p>
+                <p class="text-foreground">$ git log --oneline -10</p>
+                <p class="text-tertiary pl-2">&gt; narrowing root cause...</p>
+                <p class="text-foreground">$ strace -p $PID</p>
+                <p class="text-tertiary pl-2">&gt; check<span class="animate-pulse text-primary">▌</span></p>
+              </div>
+              <div class="border-t border-border bg-muted/40 p-4">
+                <form class="flex gap-2">
+                  <div
+                    class="flex flex-1 items-center gap-2 rounded-xl border border-border bg-input/80 px-4 py-2 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all"
+                  >
+                    <span class="font-mono text-sm text-primary shrink-0">$</span
+                    ><input
+                      type="text"
+                      disabled=""
+                      placeholder="initializing..."
+                      class="flex-1 bg-transparent font-mono text-sm text-foreground outline-none placeholder:text-muted-foreground disabled:opacity-50"
+                      value=""
+                    />
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 py-2 min-h-10 rounded-xl bg-primary px-5 font-mono text-sm font-medium text-primary-foreground shadow-[0_0_18px_-4px_var(--color-primary)] hover:bg-primary-hover hover:shadow-[0_0_28px_-2px_var(--color-primary)] disabled:opacity-40 transition-shadow duration-300"
+                    type="submit"
+                    disabled=""
+                  >
+                    send
+                  </button>
+                </form>
+                <p class="mt-2 font-mono text-xs text-muted-foreground">
+                  rubber duck debugging as a service · v0.1.0-mvp
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

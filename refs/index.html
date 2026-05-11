@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refs</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { height: 100vh; display: flex; flex-direction: column; background: #1a1a1a; color: #fff; font-family: sans-serif; }
+    nav { display: flex; gap: 2px; background: #2a2a2a; padding: 4px 8px; }
+    nav button { background: #3a3a3a; border: none; color: #aaa; padding: 6px 16px; cursor: pointer; font-size: 13px; border-radius: 3px; transition: background .15s, color .15s; }
+    nav button:hover { background: #4a4a4a; color: #fff; }
+    nav button.active { background: #fff; color: #000; }
+    iframe { flex: 1; border: none; background: #fff; }
+  </style>
+</head>
+<body>
+  <nav>
+    <button class="active" onclick="show('ref1')">ref1</button>
+    <button onclick="show('ref2')">ref2</button>
+    <button onclick="show('ref3')">ref3</button>
+    <button onclick="show('ref4')">ref4</button>
+  </nav>
+  <iframe id="frame" src="ref1/"></iframe>
+  <script>
+    function show(name) {
+      document.getElementById('frame').src = name + '/';
+      document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

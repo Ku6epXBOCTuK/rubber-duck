@@ -1,0 +1,1333 @@
+<html lang="en" class="dark" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rubber Duck Debugging as a service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <base href="./" />
+    <link rel="stylesheet" href="duck.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div
+        class="relative min-h-screen overflow-x-hidden bg-background text-foreground transition-colors duration-300 ease-in"
+      >
+        <div aria-hidden="true" class="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+          <span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 1.07143%;
+              left: -8%;
+              font-size: 10px;
+              animation-delay: 0s;
+              animation-duration: 22s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >const bug = describe(issue);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 8.21429%;
+              left: -10%;
+              font-size: 11.5px;
+              animation-delay: 3.1s;
+              animation-duration: 24.3s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >duck.listen(problem);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 15.3571%;
+              left: -12%;
+              font-size: 13px;
+              animation-delay: 6.2s;
+              animation-duration: 26.6s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >trace.stack().filter(signal);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 22.5%;
+              left: -14%;
+              font-size: 10px;
+              animation-delay: 9.3s;
+              animation-duration: 28.9s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >if (state === 'weird') inspect(inputs);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 29.6429%;
+              left: -16%;
+              font-size: 11.5px;
+              animation-delay: 12.4s;
+              animation-duration: 31.2s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >console.log('finding root cause...');</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 36.7857%;
+              left: -8%;
+              font-size: 13px;
+              animation-delay: 15.5s;
+              animation-duration: 33.5s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >return plan.nextStep();</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 43.9286%;
+              left: -10%;
+              font-size: 10px;
+              animation-delay: 18.6s;
+              animation-duration: 35.8s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >git diff --focus HEAD~1</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 51.0714%;
+              left: -12%;
+              font-size: 11.5px;
+              animation-delay: 21.7s;
+              animation-duration: 22.1s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >npm run debug:path</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 58.2143%;
+              left: -14%;
+              font-size: 13px;
+              animation-delay: 24.8s;
+              animation-duration: 24.4s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >assistant.ask('what changed?')</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 65.3571%;
+              left: -16%;
+              font-size: 10px;
+              animation-delay: 27.9s;
+              animation-duration: 26.7s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >path.push('reproduce');</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 72.5%;
+              left: -8%;
+              font-size: 11.5px;
+              animation-delay: 3s;
+              animation-duration: 29s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >debugger;</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 79.6429%;
+              left: -10%;
+              font-size: 13px;
+              animation-delay: 6.1s;
+              animation-duration: 31.3s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >console.trace('stack here');</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 86.7857%;
+              left: -12%;
+              font-size: 10px;
+              animation-delay: 9.2s;
+              animation-duration: 33.6s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >throw new Error('unexpected state');</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 93.9286%;
+              left: -14%;
+              font-size: 11.5px;
+              animation-delay: 12.3s;
+              animation-duration: 35.9s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >catch (e) { log(e.stack); }</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 1.07143%;
+              left: -16%;
+              font-size: 13px;
+              animation-delay: 15.4s;
+              animation-duration: 22.2s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >process.env.DEBUG = '*'</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 8.21429%;
+              left: -8%;
+              font-size: 10px;
+              animation-delay: 18.5s;
+              animation-duration: 24.5s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >breakpoint.set(line, 42);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 15.3571%;
+              left: -10%;
+              font-size: 11.5px;
+              animation-delay: 21.6s;
+              animation-duration: 26.8s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >heap.snapshot().analyze();</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 22.5%;
+              left: -12%;
+              font-size: 13px;
+              animation-delay: 24.7s;
+              animation-duration: 29.1s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >assert.equal(got, expected);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 29.6429%;
+              left: -14%;
+              font-size: 10px;
+              animation-delay: 27.8s;
+              animation-duration: 31.4s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >stderr.pipe(logfile);</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 36.7857%;
+              left: -16%;
+              font-size: 11.5px;
+              animation-delay: 2.9s;
+              animation-duration: 33.7s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >strace -p $PID</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 43.9286%;
+              left: -8%;
+              font-size: 13px;
+              animation-delay: 6s;
+              animation-duration: 36s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >tcpdump -i any port 8080</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 51.0714%;
+              left: -10%;
+              font-size: 10px;
+              animation-delay: 9.1s;
+              animation-duration: 22.3s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >SELECT * FROM logs WHERE level='ERROR';</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 58.2143%;
+              left: -12%;
+              font-size: 11.5px;
+              animation-delay: 12.2s;
+              animation-duration: 24.6s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >grep -r 'undefined' ./src</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 65.3571%;
+              left: -14%;
+              font-size: 13px;
+              animation-delay: 15.3s;
+              animation-duration: 26.9s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >curl -v http://localhost:3000</span
+          ><span
+            class="code-line absolute font-mono text-code-float"
+            style="
+              top: 72.5%;
+              left: -16%;
+              font-size: 10px;
+              animation-delay: 18.4s;
+              animation-duration: 29.2s;
+              letter-spacing: 0.03em;
+              user-select: none;
+            "
+            >docker logs --tail 200 app</span
+          >
+        </div>
+        <header
+          class="sticky top-0 z-30 border-b transition-all duration-200 ease-in border-transparent bg-header/70 backdrop-blur-md"
+        >
+          <div class="mx-auto flex min-h-16 max-w-7xl items-center justify-between px-8 py-3">
+            <a
+              href="#top"
+              class="inline-flex min-h-11 items-center rounded-md px-3 py-2 font-mono text-sm text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              >duck://debug</a
+            >
+            <div class="hidden items-center gap-4 lg:flex">
+              <nav
+                aria-label="Main"
+                data-orientation="horizontal"
+                dir="ltr"
+                class="relative z-10 flex max-w-max flex-1 items-center justify-center"
+              >
+                <div style="position: relative">
+                  <ul
+                    data-orientation="horizontal"
+                    class="group flex flex-1 list-none items-center justify-center space-x-1 gap-1"
+                    dir="ltr"
+                  >
+                    <li>
+                      <button
+                        type="button"
+                        class="min-h-11 rounded-md px-4 py-3 text-sm transition-colors duration-200 ease-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring bg-muted text-foreground"
+                      >
+                        How it works
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="min-h-11 rounded-md px-4 py-3 text-sm transition-colors duration-200 ease-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring bg-transparent text-muted-foreground hover:bg-muted hover:text-foreground"
+                      >
+                        Roadmap
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="min-h-11 rounded-md px-4 py-3 text-sm transition-colors duration-200 ease-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring bg-transparent text-muted-foreground hover:bg-muted hover:text-foreground"
+                      >
+                        FAQ
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="absolute left-0 top-full flex justify-center"></div>
+              </nav>
+              <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 py-2 min-h-11 min-w-11 bg-muted text-foreground hover:bg-muted-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                type="button"
+                aria-label="Switch to light theme"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+                  ></path>
+                </svg>
+              </button>
+              <div class="flex items-center gap-3">
+                <span class="text-sm text-muted-foreground">Ku6epXBOCTuK</span
+                ><button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 py-2 min-h-11 bg-muted text-foreground hover:bg-muted-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                  type="button"
+                >
+                  Log out
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 lg:hidden">
+              <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 py-2 min-h-11 min-w-11 bg-muted text-foreground hover:bg-muted-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                type="button"
+                aria-label="Switch to light theme"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+                  ></path>
+                </svg></button
+              ><button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 py-2 min-h-11 min-w-11 bg-muted text-foreground hover:bg-muted-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                type="button"
+                aria-label="Open navigation"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+                aria-controls="radix-:rb:"
+                data-state="closed"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M208,136H48a16,16,0,0,0-16,16v40a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V152A16,16,0,0,0,208,136Zm0,56H48V152H208v40Zm0-144H48A16,16,0,0,0,32,64v40a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V64A16,16,0,0,0,208,48Zm0,56H48V64H208v40Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+        <main class="relative z-10">
+          <section id="top" class="relative overflow-hidden px-8 py-16 md:py-20 lg:py-24">
+            <div class="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+              <div class="space-y-8">
+                <div class="inline-flex items-center rounded-full border border-border bg-muted px-4 py-2">
+                  <span class="font-mono text-xs text-tertiary-foreground">rubber duck debugging service</span>
+                </div>
+                <div class="space-y-5">
+                  <h1
+                    class="max-w-[14ch] text-balance text-[clamp(2.75rem,8vw,5rem)] font-medium leading-[1.15] tracking-[-0.025em] text-foreground"
+                  >
+                    Debug faster with an AI duck that thinks in steps
+                  </h1>
+                  <p class="max-w-[34ch] text-base font-light leading-7 text-muted-foreground md:text-lg">
+                    Explain the bug out loud, get a structured debugging path, and stop losing time in loops of vague
+                    guesses.
+                  </p>
+                </div>
+                <div class="flex flex-col items-start gap-3">
+                  <a
+                    href="./debug.html"
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-9 py-2 relative min-h-14 rounded-xl bg-primary px-8 text-lg font-semibold text-primary-foreground shadow-[0_0_28px_-4px_var(--color-primary)] hover:bg-primary-hover hover:shadow-[0_0_38px_-2px_var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring transition-shadow duration-300"
+                    type="button"
+                  >
+                    <span class="mr-2 font-mono text-base opacity-70">$</span>Start now<span
+                      class="ml-2 font-mono text-base opacity-70 animate-pulse"
+                      >▌</span
+                    >
+                  </a>
+                  <p class="text-sm text-muted-foreground">No install. Start debugging in 30 seconds.</p>
+                </div>
+              </div>
+              <div class="relative">
+                <div class="absolute inset-0 -z-10 rounded-2xl border border-border bg-terminal-panel"></div>
+                <div class="border text-card-foreground shadow overflow-hidden rounded-2xl border-border bg-card">
+                  <div class="flex flex-col space-y-1.5 p-6 border-b border-border bg-muted">
+                    <div class="tracking-tight font-mono text-sm font-normal text-card-foreground">
+                      terminal://session
+                    </div>
+                  </div>
+                  <div class="space-y-6 p-6">
+                    <div class="space-y-3">
+                      <div class="rounded-xl border border-border bg-panel px-4 py-3 font-mono text-sm text-foreground">
+                        <span class="text-tertiary">$ </span>describe issue --env production --symptom intermittent
+                      </div>
+                      <div class="rounded-xl border border-border bg-panel px-4 py-3 font-mono text-sm text-foreground">
+                        <span class="text-primary">&gt; </span>assistant: what changed before the failures started?
+                      </div>
+                      <div class="rounded-xl border border-border bg-panel px-4 py-3 font-mono text-sm text-foreground">
+                        <span class="text-tertiary">$ </span>plan.next()
+                        <div class="mt-3 grid gap-2 text-muted-foreground">
+                          <span>1. Reproduce with clean input</span><span>2. Compare environment flags</span
+                          ><span>3. Trace state mutation before render</span>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="./img/ai_1.png"
+                      alt="Abstract duck and code flow"
+                      width="1920"
+                      height="1080"
+                      loading="lazy"
+                      class="h-auto w-full rounded-xl border border-border object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="how-it-works" class="px-8 py-14 md:py-20">
+            <div class="mx-auto max-w-7xl">
+              <div class="mb-10 max-w-2xl space-y-3">
+                <p class="font-mono text-sm text-tertiary-foreground">workflow</p>
+                <h2 class="text-[clamp(2rem,5vw,3rem)] font-medium tracking-[-0.025em] text-foreground">
+                  How it works
+                </h2>
+                <p class="text-base font-light leading-7 text-muted-foreground">
+                  A short path from confusion to the next useful debugging action.
+                </p>
+              </div>
+              <div class="grid gap-6 md:grid-cols-3">
+                <div class="border text-card-foreground shadow overflow-hidden rounded-2xl border-border bg-card">
+                  <img
+                    src="./img/ai_2.png"
+                    alt="Abstract bug signal network"
+                    width="640"
+                    height="480"
+                    loading="lazy"
+                    class="h-44 w-full border-b border-border object-cover"
+                  />
+                  <div class="space-y-4 p-6">
+                    <div class="flex items-center justify-between gap-4">
+                      <div
+                        class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-panel"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          viewBox="0 0 256 256"
+                          class="text-primary"
+                        >
+                          <path
+                            d="M144,92a12,12,0,1,1,12,12A12,12,0,0,1,144,92ZM100,80a12,12,0,1,0,12,12A12,12,0,0,0,100,80Zm116,64A87.76,87.76,0,0,1,213,167l22.24,9.72A8,8,0,0,1,232,192a7.89,7.89,0,0,1-3.2-.67L207.38,182a88,88,0,0,1-158.76,0L27.2,191.33A7.89,7.89,0,0,1,24,192a8,8,0,0,1-3.2-15.33L43,167A87.76,87.76,0,0,1,40,144v-8H16a8,8,0,0,1,0-16H40v-8a87.76,87.76,0,0,1,3-23L20.8,79.33a8,8,0,1,1,6.4-14.66L48.62,74a88,88,0,0,1,158.76,0l21.42-9.36a8,8,0,0,1,6.4,14.66L213,89.05a87.76,87.76,0,0,1,3,23v8h24a8,8,0,0,1,0,16H216ZM56,120H200v-8a72,72,0,0,0-144,0Zm64,95.54V136H56v8A72.08,72.08,0,0,0,120,215.54ZM200,144v-8H136v79.54A72.08,72.08,0,0,0,200,144Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <span class="font-mono text-sm text-muted-foreground">01</span>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Describe problem</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Write what is broken, when it happens, and what you already checked.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow overflow-hidden rounded-2xl border-border bg-card">
+                  <img
+                    src="./img/ai_3.png"
+                    alt="Abstract duck dialogue waves"
+                    width="640"
+                    height="480"
+                    loading="lazy"
+                    class="h-44 w-full border-b border-border object-cover"
+                  />
+                  <div class="space-y-4 p-6">
+                    <div class="flex items-center justify-between gap-4">
+                      <div
+                        class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-panel"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          viewBox="0 0 256 256"
+                          class="text-tertiary"
+                        >
+                          <path
+                            d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <span class="font-mono text-sm text-muted-foreground">02</span>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Talk to duck assistant</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        The assistant asks clarifying questions and keeps the debugging thread focused.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow overflow-hidden rounded-2xl border-border bg-card">
+                  <img
+                    src="./img/ai_4.png"
+                    alt="Abstract structured debug path"
+                    width="640"
+                    height="480"
+                    loading="lazy"
+                    class="h-44 w-full border-b border-border object-cover"
+                  />
+                  <div class="space-y-4 p-6">
+                    <div class="flex items-center justify-between gap-4">
+                      <div
+                        class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-panel"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          viewBox="0 0 256 256"
+                          class="text-primary"
+                        >
+                          <path
+                            d="M224,128a8,8,0,0,1-8,8H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128ZM128,72h88a8,8,0,0,0,0-16H128a8,8,0,0,0,0,16Zm88,112H128a8,8,0,0,0,0,16h88a8,8,0,0,0,0-16ZM82.34,42.34,56,68.69,45.66,58.34A8,8,0,0,0,34.34,69.66l16,16a8,8,0,0,0,11.32,0l32-32A8,8,0,0,0,82.34,42.34Zm0,64L56,132.69,45.66,122.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32,0l32-32a8,8,0,0,0-11.32-11.32Zm0,64L56,196.69,45.66,186.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32,0l32-32a8,8,0,0,0-11.32-11.32Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <span class="font-mono text-sm text-muted-foreground">03</span>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Get structured debugging path</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Receive clear next steps, likely branches, and a practical order of investigation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="bg-section-subtle px-8 py-14 md:py-20">
+            <div class="mx-auto max-w-7xl">
+              <div class="mb-10 max-w-2xl space-y-3">
+                <p class="font-mono text-sm text-tertiary-foreground">features</p>
+                <h2 class="text-[clamp(2rem,5vw,3rem)] font-medium tracking-[-0.025em] text-foreground">
+                  Built for real debugging work
+                </h2>
+                <p class="text-base font-light leading-7 text-muted-foreground">
+                  Practical outputs for developers who need clarity, not motivational noise.
+                </p>
+              </div>
+              <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-card">
+                  <div class="space-y-4 p-6">
+                    <div
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-panel"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                        class="text-primary"
+                      >
+                        <path
+                          d="M117.31,134l-72,64a8,8,0,1,1-10.63-12L100,128,34.69,70A8,8,0,1,1,45.32,58l72,64a8,8,0,0,1,0,12ZM216,184H120a8,8,0,0,0,0,16h96a8,8,0,0,0,0-16Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Structured debugging paths</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Turn vague bug reports into reproducible, ordered next steps you can follow without losing
+                        context.
+                      </p>
+                    </div>
+                    <div class="font-mono text-xs text-muted-foreground">debug://feature</div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-card">
+                  <div class="space-y-4 p-6">
+                    <div
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-panel"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                        class="text-tertiary"
+                      >
+                        <path
+                          d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Conversation-first diagnosis</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Talk through the issue with a debugging assistant that keeps your assumptions, signals, and dead
+                        ends organized.
+                      </p>
+                    </div>
+                    <div class="font-mono text-xs text-muted-foreground">debug://feature</div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-card">
+                  <div class="space-y-4 p-6">
+                    <div
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-panel"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                        class="text-primary"
+                      >
+                        <path
+                          d="M144,92a12,12,0,1,1,12,12A12,12,0,0,1,144,92ZM100,80a12,12,0,1,0,12,12A12,12,0,0,0,100,80Zm116,64A87.76,87.76,0,0,1,213,167l22.24,9.72A8,8,0,0,1,232,192a7.89,7.89,0,0,1-3.2-.67L207.38,182a88,88,0,0,1-158.76,0L27.2,191.33A7.89,7.89,0,0,1,24,192a8,8,0,0,1-3.2-15.33L43,167A87.76,87.76,0,0,1,40,144v-8H16a8,8,0,0,1,0-16H40v-8a87.76,87.76,0,0,1,3-23L20.8,79.33a8,8,0,1,1,6.4-14.66L48.62,74a88,88,0,0,1,158.76,0l21.42-9.36a8,8,0,0,1,6.4,14.66L213,89.05a87.76,87.76,0,0,1,3,23v8h24a8,8,0,0,1,0,16H216ZM56,120H200v-8a72,72,0,0,0-144,0Zm64,95.54V136H56v8A72.08,72.08,0,0,0,120,215.54ZM200,144v-8H136v79.54A72.08,72.08,0,0,0,200,144Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Fast root-cause isolation</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Narrow scope quickly by separating symptoms, environment changes, and likely failure points.
+                      </p>
+                    </div>
+                    <div class="font-mono text-xs text-muted-foreground">debug://feature</div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-card">
+                  <div class="space-y-4 p-6">
+                    <div
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-panel"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                        class="text-tertiary"
+                      >
+                        <path
+                          d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Terminal-native atmosphere</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Built for developers who think in traces, commands, logs, and compact actionable output.
+                      </p>
+                    </div>
+                    <div class="font-mono text-xs text-muted-foreground">debug://feature</div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-card">
+                  <div class="space-y-4 p-6">
+                    <div
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-panel"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                        class="text-primary"
+                      >
+                        <path
+                          d="M224,128a8,8,0,0,1-8,8H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128ZM128,72h88a8,8,0,0,0,0-16H128a8,8,0,0,0,0,16Zm88,112H128a8,8,0,0,0,0,16h88a8,8,0,0,0,0-16ZM82.34,42.34,56,68.69,45.66,58.34A8,8,0,0,0,34.34,69.66l16,16a8,8,0,0,0,11.32,0l32-32A8,8,0,0,0,82.34,42.34Zm0,64L56,132.69,45.66,122.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32,0l32-32a8,8,0,0,0-11.32-11.32Zm0,64L56,196.69,45.66,186.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32,0l32-32a8,8,0,0,0-11.32-11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Useful team handoff</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Share a clear debugging path instead of a scattered thread of guesses and screenshots.
+                      </p>
+                    </div>
+                    <div class="font-mono text-xs text-muted-foreground">debug://feature</div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-card">
+                  <div class="space-y-4 p-6">
+                    <div
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-panel"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                        class="text-tertiary"
+                      >
+                        <path
+                          d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Zero setup start</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        No install, no local configuration, and no onboarding maze before your first debugging session.
+                      </p>
+                    </div>
+                    <div class="font-mono text-xs text-muted-foreground">debug://feature</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="roadmap" class="px-8 py-14 md:py-20">
+            <div class="mx-auto max-w-7xl">
+              <div class="mb-10 max-w-2xl space-y-3">
+                <p class="font-mono text-sm text-tertiary-foreground">roadmap</p>
+                <h2 class="text-[clamp(2rem,5vw,3rem)] font-medium tracking-[-0.025em] text-foreground">
+                  Public roadmap
+                </h2>
+                <p class="text-base font-light leading-7 text-muted-foreground">
+                  Clear product direction with explicit milestones and status tags.
+                </p>
+              </div>
+              <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-roadmap-card">
+                  <div class="space-y-5 p-6">
+                    <div class="flex items-start justify-between gap-4">
+                      <span class="font-mono text-xs text-muted-foreground">01</span>
+                      <div
+                        class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 border-0 bg-status-progress text-status-progress-foreground motion-safe:animate-[pulse_4s_ease-in-out_infinite]"
+                      >
+                        In progress
+                      </div>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">MCP server</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Connect the assistant to richer developer workflows and external tooling.
+                      </p>
+                    </div>
+                    <div
+                      class="flex items-center justify-between gap-3 rounded-xl border border-border bg-panel px-4 py-3"
+                    >
+                      <span class="font-mono text-xs text-muted-foreground">ETA</span
+                      ><span class="font-mono text-sm text-foreground">Q3</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-roadmap-card">
+                  <div class="space-y-5 p-6">
+                    <div class="flex items-start justify-between gap-4">
+                      <span class="font-mono text-xs text-muted-foreground">02</span>
+                      <div
+                        class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 border-0 bg-status-planned text-status-planned-foreground"
+                      >
+                        Planned
+                      </div>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Skins</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Theme packs and visual personalization for your debugging workspace.
+                      </p>
+                    </div>
+                    <div
+                      class="flex items-center justify-between gap-3 rounded-xl border border-border bg-panel px-4 py-3"
+                    >
+                      <span class="font-mono text-xs text-muted-foreground">ETA</span
+                      ><span class="font-mono text-sm text-foreground">Q3</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-roadmap-card">
+                  <div class="space-y-5 p-6">
+                    <div class="flex items-start justify-between gap-4">
+                      <span class="font-mono text-xs text-muted-foreground">03</span>
+                      <div
+                        class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 border-0 bg-status-planned text-status-planned-foreground"
+                      >
+                        Planned
+                      </div>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Battlepass</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Progression mechanics for debugging sessions, streaks, and milestones.
+                      </p>
+                    </div>
+                    <div
+                      class="flex items-center justify-between gap-3 rounded-xl border border-border bg-panel px-4 py-3"
+                    >
+                      <span class="font-mono text-xs text-muted-foreground">ETA</span
+                      ><span class="font-mono text-sm text-foreground">Q4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border text-card-foreground shadow rounded-2xl border-border bg-roadmap-card">
+                  <div class="space-y-5 p-6">
+                    <div class="flex items-start justify-between gap-4">
+                      <span class="font-mono text-xs text-muted-foreground">04</span>
+                      <div
+                        class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 border-0 bg-status-backlog text-status-backlog-foreground"
+                      >
+                        Backlog
+                      </div>
+                    </div>
+                    <div class="space-y-2">
+                      <h3 class="text-lg font-medium text-foreground">Lootboxes</h3>
+                      <p class="text-sm font-light leading-6 text-muted-foreground">
+                        Experimental unlockables for playful engagement without blocking core utility.
+                      </p>
+                    </div>
+                    <div
+                      class="flex items-center justify-between gap-3 rounded-xl border border-border bg-panel px-4 py-3"
+                    >
+                      <span class="font-mono text-xs text-muted-foreground">ETA</span
+                      ><span class="font-mono text-sm text-foreground">Later</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <img
+                  src="./img/ai_5.png"
+                  alt="Abstract four track roadmap"
+                  width="1280"
+                  height="720"
+                  loading="lazy"
+                  class="h-auto w-full rounded-2xl border border-border object-cover"
+                />
+              </div>
+            </div>
+          </section>
+          <section id="faq" class="bg-section-subtle px-8 py-14 md:py-20">
+            <div class="mx-auto max-w-4xl">
+              <div class="mb-10 max-w-2xl space-y-3">
+                <p class="font-mono text-sm text-tertiary-foreground">faq</p>
+                <h2 class="text-[clamp(2rem,5vw,3rem)] font-medium tracking-[-0.025em] text-foreground">
+                  Questions developers ask before they try it
+                </h2>
+                <p class="text-base font-light leading-7 text-muted-foreground">
+                  Short answers for common objections, setup worries, and workflow questions.
+                </p>
+              </div>
+              <div class="rounded-2xl border border-border bg-card px-6" data-orientation="vertical">
+                <div data-state="closed" data-orientation="vertical" class="border-b border-border">
+                  <h3 data-orientation="vertical" data-state="closed" class="flex">
+                    <button
+                      type="button"
+                      aria-controls="radix-:rh:"
+                      aria-expanded="false"
+                      data-state="closed"
+                      data-orientation="vertical"
+                      id="radix-:rf:"
+                      class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 py-5 text-left text-base font-normal text-foreground hover:no-underline"
+                      data-radix-collection-item=""
+                    >
+                      <span class="pr-4 text-foreground">What is rubber duck debugging?</span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200"
+                        aria-hidden="true"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                  </h3>
+                  <div
+                    data-state="closed"
+                    id="radix-:rh:"
+                    hidden=""
+                    role="region"
+                    aria-labelledby="radix-:rf:"
+                    data-orientation="vertical"
+                    class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+                    style="
+                      --radix-accordion-content-height: var(--radix-collapsible-content-height);
+                      --radix-accordion-content-width: var(--radix-collapsible-content-width);
+                    "
+                  ></div>
+                </div>
+                <div data-state="closed" data-orientation="vertical" class="border-b border-border">
+                  <h3 data-orientation="vertical" data-state="closed" class="flex">
+                    <button
+                      type="button"
+                      aria-controls="radix-:rl:"
+                      aria-expanded="false"
+                      data-state="closed"
+                      data-orientation="vertical"
+                      id="radix-:rj:"
+                      class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 py-5 text-left text-base font-normal text-foreground hover:no-underline"
+                      data-radix-collection-item=""
+                    >
+                      <span class="pr-4 text-foreground">How is this different from a normal chatbot?</span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200"
+                        aria-hidden="true"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                  </h3>
+                  <div
+                    data-state="closed"
+                    id="radix-:rl:"
+                    hidden=""
+                    role="region"
+                    aria-labelledby="radix-:rj:"
+                    data-orientation="vertical"
+                    class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+                    style="
+                      --radix-accordion-content-height: var(--radix-collapsible-content-height);
+                      --radix-accordion-content-width: var(--radix-collapsible-content-width);
+                    "
+                  ></div>
+                </div>
+                <div data-state="closed" data-orientation="vertical" class="border-b border-border">
+                  <h3 data-orientation="vertical" data-state="closed" class="flex">
+                    <button
+                      type="button"
+                      aria-controls="radix-:rp:"
+                      aria-expanded="false"
+                      data-state="closed"
+                      data-orientation="vertical"
+                      id="radix-:rn:"
+                      class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 py-5 text-left text-base font-normal text-foreground hover:no-underline"
+                      data-radix-collection-item=""
+                    >
+                      <span class="pr-4 text-foreground">Do I need to install anything?</span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200"
+                        aria-hidden="true"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                  </h3>
+                  <div
+                    data-state="closed"
+                    id="radix-:rp:"
+                    hidden=""
+                    role="region"
+                    aria-labelledby="radix-:rn:"
+                    data-orientation="vertical"
+                    class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+                    style="
+                      --radix-accordion-content-height: var(--radix-collapsible-content-height);
+                      --radix-accordion-content-width: var(--radix-collapsible-content-width);
+                    "
+                  ></div>
+                </div>
+                <div data-state="closed" data-orientation="vertical" class="border-b border-border">
+                  <h3 data-orientation="vertical" data-state="closed" class="flex">
+                    <button
+                      type="button"
+                      aria-controls="radix-:rt:"
+                      aria-expanded="false"
+                      data-state="closed"
+                      data-orientation="vertical"
+                      id="radix-:rr:"
+                      class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 py-5 text-left text-base font-normal text-foreground hover:no-underline"
+                      data-radix-collection-item=""
+                    >
+                      <span class="pr-4 text-foreground">Can teams use it together?</span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200"
+                        aria-hidden="true"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                  </h3>
+                  <div
+                    data-state="closed"
+                    id="radix-:rt:"
+                    hidden=""
+                    role="region"
+                    aria-labelledby="radix-:rr:"
+                    data-orientation="vertical"
+                    class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+                    style="
+                      --radix-accordion-content-height: var(--radix-collapsible-content-height);
+                      --radix-accordion-content-width: var(--radix-collapsible-content-width);
+                    "
+                  ></div>
+                </div>
+                <div data-state="closed" data-orientation="vertical" class="border-b border-border">
+                  <h3 data-orientation="vertical" data-state="closed" class="flex">
+                    <button
+                      type="button"
+                      aria-controls="radix-:r11:"
+                      aria-expanded="false"
+                      data-state="closed"
+                      data-orientation="vertical"
+                      id="radix-:rv:"
+                      class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 py-5 text-left text-base font-normal text-foreground hover:no-underline"
+                      data-radix-collection-item=""
+                    >
+                      <span class="pr-4 text-foreground">Will it replace logs and manual investigation?</span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200"
+                        aria-hidden="true"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                  </h3>
+                  <div
+                    data-state="closed"
+                    id="radix-:r11:"
+                    hidden=""
+                    role="region"
+                    aria-labelledby="radix-:rv:"
+                    data-orientation="vertical"
+                    class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+                    style="
+                      --radix-accordion-content-height: var(--radix-collapsible-content-height);
+                      --radix-accordion-content-width: var(--radix-collapsible-content-width);
+                    "
+                  ></div>
+                </div>
+                <div data-state="closed" data-orientation="vertical" class="border-b border-border">
+                  <h3 data-orientation="vertical" data-state="closed" class="flex">
+                    <button
+                      type="button"
+                      aria-controls="radix-:r15:"
+                      aria-expanded="false"
+                      data-state="closed"
+                      data-orientation="vertical"
+                      id="radix-:r13:"
+                      class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 py-5 text-left text-base font-normal text-foreground hover:no-underline"
+                      data-radix-collection-item=""
+                    >
+                      <span class="pr-4 text-foreground">What kinds of bugs work best?</span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200"
+                        aria-hidden="true"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                  </h3>
+                  <div
+                    data-state="closed"
+                    id="radix-:r15:"
+                    hidden=""
+                    role="region"
+                    aria-labelledby="radix-:r13:"
+                    data-orientation="vertical"
+                    class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+                    style="
+                      --radix-accordion-content-height: var(--radix-collapsible-content-height);
+                      --radix-accordion-content-width: var(--radix-collapsible-content-width);
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="px-8 py-14 md:py-20">
+            <div class="mx-auto max-w-5xl rounded-3xl border border-border bg-cta-panel px-8 py-10 md:px-12 md:py-12">
+              <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+                <div class="max-w-2xl space-y-3">
+                  <p class="font-mono text-sm text-tertiary-foreground">ready</p>
+                  <h2 class="text-[clamp(2rem,5vw,3rem)] font-medium tracking-[-0.025em] text-foreground">
+                    Explain the bug. Follow the path. Ship the fix.
+                  </h2>
+                  <p class="text-base font-light leading-7 text-muted-foreground">
+                    Built for developers who want a calm debugging assistant instead of more noise.
+                  </p>
+                </div>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 py-2 min-h-12 rounded-xl bg-primary text-primary-foreground hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                  type="button"
+                >
+                  Start now
+                </button>
+              </div>
+            </div>
+          </section>
+          <section id="contact" class="px-8 py-14 md:py-20">
+            <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+              <div class="space-y-4">
+                <p class="font-mono text-sm text-tertiary-foreground">contacts</p>
+                <h2 class="text-[clamp(2rem,5vw,3rem)] font-medium tracking-[-0.025em] text-foreground">
+                  Need a custom rollout or have product questions?
+                </h2>
+                <p class="text-base font-light leading-7 text-muted-foreground">
+                  Send a note and we will reply with the best next step for your team, workflow, or partnership.
+                </p>
+                <div class="rounded-2xl border border-border bg-card p-6">
+                  <p class="text-sm text-foreground">Email</p>
+                  <a
+                    href="mailto:hello@duckdebug.dev"
+                    class="mt-2 inline-flex min-h-11 items-center rounded-md text-base text-tertiary hover:text-link-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                    >hello@duckdebug.dev</a
+                  >
+                </div>
+              </div>
+              <div class="border text-card-foreground shadow rounded-2xl border-border bg-card">
+                <div class="p-6">
+                  <form class="space-y-5">
+                    <div class="space-y-2">
+                      <label for="email" class="text-sm font-light text-foreground">Email</label
+                      ><input
+                        id="email"
+                        type="email"
+                        required=""
+                        class="min-h-12 w-full rounded-xl border border-border bg-input px-4 py-3 text-base text-foreground outline-none transition-colors duration-200 ease-in placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                        placeholder="name@company.com"
+                        value=""
+                      />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="subject" class="text-sm font-light text-foreground">Subject</label
+                      ><input
+                        id="subject"
+                        type="text"
+                        class="min-h-12 w-full rounded-xl border border-border bg-input px-4 py-3 text-base text-foreground outline-none transition-colors duration-200 ease-in placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                        placeholder="Team onboarding, partnership, roadmap question"
+                        value=""
+                      />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="message" class="text-sm font-light text-foreground">Message</label
+                      ><textarea
+                        id="message"
+                        required=""
+                        rows="5"
+                        class="w-full rounded-xl border border-border bg-input px-4 py-3 text-base text-foreground outline-none transition-colors duration-200 ease-in placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                        placeholder="Tell us what you are trying to debug or build."
+                      ></textarea>
+                    </div>
+                    <button
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 py-2 min-h-12 rounded-xl bg-secondary text-secondary-foreground hover:bg-secondary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                      type="submit"
+                    >
+                      Send message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="border-t border-border bg-footer px-8 py-10">
+          <div class="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
+            <div class="space-y-2">
+              <p class="font-mono text-sm text-foreground">duck://debug</p>
+              <p class="text-sm font-light text-muted-foreground">
+                Rubber duck debugging service for developers and teams.
+              </p>
+            </div>
+            <nav aria-label="Footer" class="flex flex-wrap gap-5">
+              <a
+                href="#"
+                class="inline-flex min-h-11 items-center rounded-md text-sm text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                >Privacy</a
+              ><a
+                href="#"
+                class="inline-flex min-h-11 items-center rounded-md text-sm text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                >Terms</a
+              ><a
+                href="#contact"
+                class="inline-flex min-h-11 items-center rounded-md text-sm text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                >Contacts</a
+              ><a
+                href="#"
+                class="inline-flex min-h-11 items-center rounded-md text-sm text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                >GitHub</a
+              ><a
+                href="#"
+                class="inline-flex min-h-11 items-center rounded-md text-sm text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                >Docs</a
+              >
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
